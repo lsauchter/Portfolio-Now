@@ -31,18 +31,19 @@
   }
   
   header {
-    padding: 12% 0;
+    padding: 15% 0;
     font-family: 'Montserrat', sans-serif;
   }
   
   .about {
-    min-height: 200px;
-    padding: 6% 0;
+    height: 200px;
+    padding: 5% 0;
     background-color: rgb(189, 188, 188);
   }
   
   .samples {
     background-color: rgb(226, 226, 226);
+    padding: 5% 0;
   }
 
   .project {
