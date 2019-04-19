@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  nav,
+  footer {
+    padding: 1% 0;
+    background-color: rgb(145, 145, 145);
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    height: 100px;
+  }
+  
+  .menu {
+    position: absolute;
+    right: 5px;
+    top: 0;
+  }
+  
+  header {
+    padding: 12% 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .about {
+    min-height: 200px;
+    padding: 6% 0;
+    background-color: rgb(189, 188, 188);
+  }
+  
+  .samples {
+    background-color: rgb(226, 226, 226);
+  }
+
+  .project {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
