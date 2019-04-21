@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
   }
   
   body {
@@ -52,13 +53,13 @@
   
   .about {
     min-height: 200px;
-    padding: 5%;
+    padding: 5% 0;
     background-color: rgb(189, 188, 188);
   }
   
   .samples {
     background-color: rgb(226, 226, 226);
-    padding: 5% 0;
+    padding: 3% 0 5% 0;
   }
 
   .sample_img {
@@ -74,8 +75,9 @@
     margin-right: auto;
   }
 
-  .project h3 {
+  .samples h2, h3 {
     font-weight: 800;
+    padding: 2%;
   }
 
   .project p {
