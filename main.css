@@ -11,12 +11,17 @@
   
   nav,
   footer {
-    padding: 1% 0;
     background-color: rgb(145, 145, 145);
   }
   
+  footer {
+    height: 75px;
+    padding: 2.5%;
+  }
+
   nav {
     position: fixed;
+    padding: 1%;
     top: 0;
     left: 0;
     right: 0;
