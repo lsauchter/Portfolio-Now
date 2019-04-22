@@ -9,10 +9,19 @@
     text-align: center;
     line-height: 1.5;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  p {
+    padding: 7.5%;
+
+  }
   
   nav,
   footer {
-    background-color: rgb(145, 145, 145);
+    background-color: #F1F5F8;
   }
   
   footer {
@@ -26,7 +35,6 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
     height: 75px;
   }
 
@@ -41,7 +49,7 @@
   }
   
   header {
-    padding: 20% 5% 10% 5%;
+    padding: 20% 5% 15% 5%;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(
       rgb(77, 192, 181, 0.8), rgb(77, 192, 181, 0.8)
@@ -50,15 +58,30 @@
     background-size: cover;
     color: white;
   }
+
+  header h1 {
+    padding: 5%;
+  }
   
   .about {
     min-height: 200px;
     padding: 5% 0;
-    background-color: rgb(189, 188, 188);
+    background-color:#20504F;
+    color: white;
+  }
+
+  .about p {
+    text-align: left;
+  }
+
+  .headshot {
+    height: 50%;
+    width: 50%;
+    padding: 4% 0 1%;
   }
   
   .samples {
-    background-color: rgb(226, 226, 226);
+    background-color: #E8FFFE;
     padding: 3% 0 5% 0;
   }
 
@@ -75,7 +98,7 @@
     margin-right: auto;
   }
 
-  .samples h2, h3 {
+  h2, h3 {
     font-weight: 800;
     padding: 2%;
   }
