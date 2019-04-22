@@ -24,8 +24,7 @@
     padding: 5%;
   }
   
-  nav,
-  footer {
+  nav, footer, .navlinks {
     background-color: #E8FFFE;
   }
   
@@ -41,6 +40,20 @@
     left: 0;
     right: 0;
     height: 50px;
+  }
+
+  .navlinks {
+    padding: 10% 5% 5% 0;
+    line-height: 2;
+    text-align: right;
+    min-width: 210px;
+    width: 30%;
+    position: absolute;
+    right: 0;
+  }
+
+  ul {
+    list-style: none;
   }
 
   .fa-bars {

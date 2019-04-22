@@ -10,7 +10,15 @@
 </head>
 <body>
     <nav role="navigation">
-        <a href="#" class="menu"><i class="fas fa-bars fa-2x" alt="Nav menu bars"></i></a>
+        <div class="navlinks">
+        <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#samples">Sample Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        </ul>
+        </div>
+        <div class="menu hamburger"><i class="fas fa-bars fa-2x" alt="Nav menu bars"></i></div>
+        <div class="menu cross"><i class="fas fa-times fa-2x" alt="Close symbol"></i></div>
     </nav>
     <main role="main">
         <header id="intro" role="banner">
@@ -55,7 +63,7 @@
             </div>
         </section>
     </main>
-    <footer role="content-info">
+    <footer id="contact" role="content-info">
     <a href="mailto:lsauchter@gmail.com">lsauchter@gmail.com</a>
     <span> | </span>
     <a href="https://github.com/lsauchter">github.com/lsauchter</a>
@@ -65,5 +73,10 @@
             </a>
         </div>
 </footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
