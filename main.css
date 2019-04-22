@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    scroll-behavior: smooth;
   }
   
   body {
@@ -17,6 +18,10 @@
   p {
     padding: 7.5%;
 
+  }
+
+  .fa-chevron-down, .fa-chevron-up {
+    padding: 5%;
   }
   
   nav,
@@ -49,7 +54,7 @@
   }
   
   header {
-    padding: 20% 5% 15% 5%;
+    padding: 20% 5% 10% 5%;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(
       rgb(77, 192, 181, 0.8), rgb(77, 192, 181, 0.8)
@@ -62,15 +67,19 @@
   header h1 {
     padding: 5%;
   }
+
+  header .fa-chevron-down, .about .fa-chevron-down {
+    color: white;
+  }
   
-  .about {
+  #about {
     min-height: 200px;
     padding: 5% 0;
     background-color:#20504F;
     color: white;
   }
 
-  .about p {
+  #about p {
     text-align: left;
   }
 
@@ -80,7 +89,7 @@
     padding: 4% 0 1%;
   }
   
-  .samples {
+  #samples {
     background-color: #E8FFFE;
     padding: 3% 0 5% 0;
   }
