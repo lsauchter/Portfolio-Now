@@ -26,7 +26,7 @@
   
   nav,
   footer {
-    background-color: #F1F5F8;
+    background-color: #E8FFFE;
   }
   
   footer {
@@ -40,7 +40,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 75px;
+    height: 50px;
   }
 
   .fa-bars {
@@ -65,7 +65,11 @@
   }
 
   header h1 {
-    padding: 5%;
+    padding: 5% 5% 10%;
+  }
+
+  header .fa-chevron-down {
+    padding: 25% 0 0%;
   }
 
   header .fa-chevron-down, .about .fa-chevron-down {
@@ -90,8 +94,13 @@
   }
   
   #samples {
-    background-color: #E8FFFE;
+    background-color: #4DC0B5;
     padding: 3% 0 5% 0;
+    color: white;
+  }
+
+  #samples h2 {
+    padding-bottom: 5%;
   }
 
   .sample_img {
@@ -105,6 +114,25 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    background-color:#E8FFFE;
+    color: black;
+    padding: 5% 0;
+  }
+
+  .fa-html5, .fa-css3-alt, .fa-js-square {
+    padding-bottom: 3px;
+  }
+
+  .tools {
+    position: relative;
+    padding-right: 60px;
+  }
+
+  .jquery {
+    position: absolute;
+    bottom: 0;
+    width: 85px;
+    height: 85px;
   }
 
   h2, h3 {
