@@ -108,7 +108,7 @@
   }
 
   .sample_img {
-    padding-bottom: 2.5%;
+    padding: 2.5% 0;
     width: 90%;
   }
 
@@ -152,7 +152,19 @@
     color: black;
   }
 
-  @media screen and (min-width: 1001px) {
+  @media screen and (min-width: 1025px) {
+
+  header h1 {
+    padding: 5% 5% 5%;
+  }
+
+  header {
+    padding: 10% 5% 10% 5%;
+  }
+
+  header .fa-chevron-down {
+    padding: 10% 0 0%;
+  }
 
   .menu {
     display: none;
@@ -160,6 +172,7 @@
 
   .navlinks {
     text-align: right;
+    display: inline !important;
   }
 
   .navlinks li {
@@ -173,18 +186,18 @@
   }
 }
 
-  @media screen and (min-width: 650px) and (max-width: 1000px) {
+  @media screen and (min-width: 650px) and (max-width: 1024px) {
 
     header h1 {
       padding: 5% 5% 10%;
     }
 
     header {
-      padding: 20% 5% 10% 5%;
+      padding: 15% 5% 10% 5%;
     }
 
     header .fa-chevron-down {
-      padding: 25% 0 0%;
+      padding: 15% 0 0%;
     }
 
     .menu {
@@ -193,6 +206,7 @@
 
     .navlinks {
       text-align: right;
+      display: inline !important;
     }
   
     .navlinks li {
