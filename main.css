@@ -178,7 +178,7 @@
 
   .headshot {
     float: left;
-    padding-right: 30px;
+    padding: 0 30px;
     height: 40%;
     width: 40%;
   }
