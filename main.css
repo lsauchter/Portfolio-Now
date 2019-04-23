@@ -57,7 +57,7 @@
   }
   
   header {
-    padding: 20% 5% 10% 5%;
+    padding: 15% 5% 5% 5%;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(
       rgb(77, 192, 181, 0.8), rgb(77, 192, 181, 0.8)
@@ -65,6 +65,7 @@
     url(https://images.unsplash.com/photo-1491944799262-a5be522e2300) center no-repeat;
     background-size: cover;
     color: white;
+    max-height: 700px;
   }
 
   header h1 {
@@ -72,7 +73,7 @@
   }
 
   header .fa-chevron-down {
-    padding: 25% 0 0%;
+    padding: 10% 0 0%;
   }
 
   header .fa-chevron-down, .about .fa-chevron-down {
@@ -155,23 +156,36 @@
     visibility: hidden;
   }
 
-  @media screen and (min-width: 650px) {
-    .navlinks {
-      text-align: right;
+  .navlinks {
+    text-align: right;
+  }
+
+  .navlinks li {
+    border: 2px solid black;
+    display: inline;
+    padding: 1%;
+  }
+
+  .navlinks a {
+    text-decoration: none;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+
+  @media screen and (max-width: 1000px) {
+
+    header h1 {
+      padding: 5% 5% 10%;
     }
 
-    .navlinks li {
-      border: 2px solid black;
-      display: inline;
-      padding: 1%;
+    header {
+      padding: 20% 5% 10% 5%;
     }
 
-    .navlinks a {
-      text-decoration: none;
-    }
-
-    .menu {
-      visibility: hidden;
+    header .fa-chevron-down {
+      padding: 25% 0 0%;
     }
   }
   
@@ -184,5 +198,18 @@
       width: 30%;
       position: absolute;
       right: 0;
+    }
+
+    .navlinks li {
+      border: none;
+      display: block;
+    }
+
+    .navlinks a {
+      text-decoration: underline;
+    }
+
+    .menu {
+      visibility: visible;
     }
   }
