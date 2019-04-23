@@ -118,6 +118,10 @@
     width: 90%;
   }
 
+  .livepage {
+    color: #38A89D;
+  }
+
   .project {
     border: 2px solid black;
     border-radius: 15px;
