@@ -39,17 +39,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
-  }
-
-  .navlinks {
-    padding: 10% 5% 5% 0;
-    line-height: 2;
-    text-align: right;
-    min-width: 210px;
-    width: 30%;
-    position: absolute;
-    right: 0;
+    min-height: 50px;
   }
 
   ul {
@@ -160,4 +150,39 @@
   a {
     color: black;
   }
+
+  .hide {
+    visibility: hidden;
+  }
+
+  @media screen and (min-width: 650px) {
+    .navlinks {
+      text-align: right;
+    }
+
+    .navlinks li {
+      border: 2px solid black;
+      display: inline;
+      padding: 1%;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+    }
+
+    .menu {
+      visibility: hidden;
+    }
+  }
   
+  @media screen and (max-width: 649px) {
+    .navlinks {
+      padding: 10% 5% 5% 0;
+      line-height: 2;
+      text-align: right;
+      min-width: 210px;
+      width: 30%;
+      position: absolute;
+      right: 0;
+    }
+  }
