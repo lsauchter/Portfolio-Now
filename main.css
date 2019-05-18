@@ -24,7 +24,7 @@
     padding: 5%;
   }
   
-  nav, footer, .navlinks {
+  nav, footer, .navlinks, #contact .arrows {
     background-color: #E8FFFE;
   }
   
@@ -131,6 +131,11 @@
     background-color:#E8FFFE;
     color: black;
     padding: 5% 0;
+    margin-bottom: 5%;
+  }
+
+  #samples>div:last-child {
+    margin-bottom: 0;
   }
 
   .fa-html5, .fa-css3-alt, .fa-js-square {
@@ -155,7 +160,8 @@
   }
 
   .project p {
-    padding: 0% 3% 5% 3%;
+    padding: 5% 5% 5% 20%;
+    text-align: left;
   }
 
   a {
@@ -164,6 +170,10 @@
 
   #contact>a {
     padding: 0% 2%;
+  }
+
+  #contact .fa-chevron-up {
+    padding: 2%;
   }
 
   @media screen and (min-width: 1025px) {
@@ -187,7 +197,7 @@
     width: 40%;
   }
 
-  #about .arrow {
+  #about .arrows {
     position: relative;
     width: 100%;
     text-align: center;
@@ -219,7 +229,6 @@
   }
 
   .navlinks li {
-    border: 2px solid black;
     display: inline;
     padding: 1%;
   }
@@ -227,6 +236,7 @@
   .navlinks a {
     text-decoration: none;
   }
+
 }
 
   @media screen and (min-width: 650px) and (max-width: 1024px) {
@@ -253,7 +263,6 @@
     }
   
     .navlinks li {
-      border: 2px solid black;
       display: inline;
       padding: 1%;
     }
@@ -262,6 +271,10 @@
       text-decoration: none;
     }
 
+    .project p {
+      text-align: center;
+      padding: 5% 5%;
+    }
   }
   
   @media screen and (max-width: 649px) {
@@ -287,10 +300,6 @@
       display: none;
     }
 
-    .navlinks li {
-      border: none;
-    }
-
     .navlinks a {
       text-decoration: underline;
     }
@@ -307,4 +316,8 @@
       display: none;
     }
 
+    .project p {
+      text-align: center;
+      padding: 5% 5%;
+    }
   }

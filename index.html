@@ -15,11 +15,11 @@
 <body>
     <nav role="navigation">
         <div class="navlinks">
-        <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#samples">Sample Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        </ul>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#samples">Sample Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
         <a id="home" href="#intro"><i class="fas fa-laptop-code fa-2x"></i></a>
         <div id="hamburger" class="menu" onclick="menu()"><i class="fas fa-bars fa-2x" alt="Nav menu bars"></i></div>
@@ -28,59 +28,80 @@
     <main role="main">
         <header id="intro" role="banner">
             <h1>Hi, I'm Lauren</h1>
-            <h2>I'm an aspiring web developer based in the Triangle</h3>
-        <div class="arrow">
-            <a href="#about">
+            <h2>I'm an aspiring web developer based in Raleigh/Durham, NC</h3>
+            <div class="arrows">
+                <a href="#about">
                     <i class="fas fa-chevron-down fa-2x arrow"></i>
-            </a>
-        </div>
+                </a>
+            </div>
         </header>
 
         <section id="about">
             <h2>About Me</h2>
             <img class="headshot" src="Images/headshot.jpg" alt="Lauren Headshot" />
             <p>I am currently part of Thinkful's Full Stack program and love getting to study programming. As a life-long learner, I'm constantly researching and exploring new technologies and am always working to expand my knowledge base. Creating clean applications and putting together the puzzle of code is fascinating. When I'm not studying, I spend most of my time working with tech and I even teach coding to elementary and middle school students!</p>
-            <div class="arrow">
-                    <a href="#samples">
-                            <i class="fas fa-chevron-down fa-2x arrow"></i>
-                    </a>
-                </div>
+            <div class="arrows">
+                <a href="#samples">
+                    <i class="fas fa-chevron-down fa-2x arrow"></i>
+                </a>
+            </div>
         </section>
 
         <section id="samples">
             <h2>Sample Projects</h2>
+
             <div class="project">
-            <div class="projectText">
-            <h3>
-             <a class="livepage" href="https://lsauchter.github.io/Harry-Potter-Quiz">
-                Harry Potter Quiz</a>
-            <a href="https://github.com/lsauchter/Harry-Potter-Quiz">
-                <i class="fab fa-github"></i></a>
-            </h3>
-            <p>A quiz program utilizing jQuery to allow users to submit answers, receive feedback, and track their score.</p>
-            <h3>Tools</h3>
-            <div class="tools">
-                <i class="fab fa-html5 fa-4x"></i>
-                <i class="fab fa-css3-alt fa-4x"></i>
-                <i class="fab fa-js-square fa-4x"></i>
-                <img class="jquery" src="https://static1.squarespace.com/static/56042355e4b05373b9f4abb9/t/56098112e4b0f6d7a100aebf/1443463443576/?format=20w" alt="jQuery icon"></img>
+                <div class="projectText">
+                    <h3>
+                        <a class="livepage" target="_blank" href="https://lsauchter.github.io/Harry-Potter-Quiz">
+                            Harry Potter Quiz</a>
+                        <a target="_blank" href="https://github.com/lsauchter/Harry-Potter-Quiz">
+                            <i class="fab fa-github"></i></a>
+                    </h3>
+                    <p>A quiz program utilizing jQuery to allow users to submit answers, receive feedback, and track their score.</p>
+                    <h3>Tools</h3>
+                    <div class="tools">
+                        <i class="fab fa-html5 fa-4x"></i>
+                        <i class="fab fa-css3-alt fa-4x"></i>
+                        <i class="fab fa-js-square fa-4x"></i>
+                        <img class="jquery" src="https://static1.squarespace.com/static/56042355e4b05373b9f4abb9/t/56098112e4b0f6d7a100aebf/1443463443576/?format=20w" alt="jQuery icon"></img>
+                    </div>
+                </div>
+                <img class="sample_img" src="Images/Harry Potter Quiz copy.jpg" alt="Harry Potter quiz image" />    
             </div>
+
+            <div class="project">
+                <div class="projectText">
+                    <h3>
+                        <a class="livepage" target="_blank" href="https://lsauchter.github.io/ISS-Locator">
+                            International Space Station Locator</a>
+                        <a target="_blank" href="https://github.com/lsauchter/ISS-Locator">
+                        <i class="fab fa-github"></i></a>
+                    </h3>
+                    <p>Find out the next time the International Space Station will be visible from your loctation as the map live-tracks the ISS. This app uses data from the <a href="http://open-notify.org/">Open Notify ISS API</a>, <a href="https://leafletjs.com/">Leaflet</a>, <a href="https://www.mapbox.com/">Mapbox</a>, and the <a href="https://www.zipcodeapi.com/">Zip Code API</a>.</p>
+                    <h3>Tools</h3>
+                    <div class="tools">
+                        <i class="fab fa-html5 fa-4x"></i>
+                    <i class="fab fa-css3-alt fa-4x"></i>
+                    <i class="fab fa-js-square fa-4x"></i>
+                    <img class="jquery" src="https://static1.squarespace.com/static/56042355e4b05373b9f4abb9/t/56098112e4b0f6d7a100aebf/1443463443576/?format=20w" alt="jQuery icon"></img>
+                    </div>
+                </div>
+                <img class="sample_img" src="Images/ISSLocator.jpg" alt="ISS web page image" />    
             </div>
-            <img class="sample_img" src="Images/Harry Potter Quiz copy.jpg" alt="Harry Potter quiz image" />    
-        </div>
         </section>
     </main>
     <footer id="contact" role="contentinfo">
-    <a href="mailto:lsauchter@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
-    <a href="https://github.com/lsauchter"><i class="fab fa-github-square fa-3x"></i></a>
-    <a href="https://www.linkedin.com/in/lauren-auchter-8999bb27"><i class="fab fa-linkedin fa-3x"></i></a>
-    <a href="https://twitter.com/LaurenAuchter"><i class="fab fa-twitter-square fa-3x"></i></a>
-    <div class="arrow">
+        <a href="mailto:lsauchter@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
+        <a target="_blank" href="https://github.com/lsauchter"><i class="fab fa-github-square fa-3x"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/lauren-auchter-8999bb27"><i class="fab fa-linkedin fa-3x"></i></a>
+        <a target="_blank" href="https://twitter.com/LaurenAuchter"><i class="fab fa-twitter-square fa-3x"></i></a>
+        <div class="arrows">
             <a href="#intro">
-                    <i class="fas fa-chevron-up fa-2x arrow"></i>
+                <i class="fas fa-chevron-up fa-2x arrow"></i>
             </a>
         </div>
-</footer>
+    </footer>
 <script
   src="https://code.jquery.com/jquery-3.4.0.min.js"
   integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
