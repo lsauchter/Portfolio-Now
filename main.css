@@ -17,11 +17,6 @@
 
   p {
     padding: 7.5%;
-
-  }
-
-  .fa-chevron-down, .fa-chevron-up {
-    padding: 5%;
   }
   
   nav, footer, .navlinks, #contact .arrows {
@@ -29,8 +24,7 @@
   }
   
   footer {
-    height: 75px;
-    padding-top: 7.5px;
+    padding-top: 2%;
   }
 
   nav {
@@ -63,7 +57,7 @@
   }
   
   header {
-    padding: 15% 5% 5% 5%;
+    padding: 10% 5% 2% 5%;
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(
       rgb(77, 192, 181, 0.8), rgb(77, 192, 181, 0.8)
@@ -71,24 +65,16 @@
     url(https://images.unsplash.com/photo-1491944799262-a5be522e2300) center no-repeat;
     background-size: cover;
     color: white;
-    max-height: 700px;
+    height: 100vh;
   }
 
-  header h1 {
-    padding: 5% 5% 10%;
-  }
-
-  header .fa-chevron-down {
-    padding: 10% 0 0%;
-  }
-
-  header .fa-chevron-down, .about .fa-chevron-down {
+  header .fa-chevron-down, #about .fa-chevron-down {
     color: white;
   }
   
   #about {
     min-height: 200px;
-    padding: 5% 0;
+    padding: 5% 0 2%;
     background-color:#20504F;
     color: white;
   }
@@ -98,9 +84,9 @@
   }
 
   .headshot {
-    height: 50%;
-    width: 50%;
-    padding: 4% 0 1%;
+    padding: 4% 0 1% 5%;
+    object-fit: contain;
+    max-width: 40%;
   }
   
   #samples {
@@ -114,7 +100,7 @@
   }
 
   .sample_img {
-    padding: 2.5% 0;
+    padding: 5% 0 2.5%;
     width: 90%;
   }
 
@@ -176,25 +162,26 @@
     padding: 2%;
   }
 
+  .aboutContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header .arrows {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+  }
+
   @media screen and (min-width: 1025px) {
 
   header h1 {
-    padding: 5% 5% 5%;
+    padding: 10% 5%;
   }
 
   header {
-    padding: 10% 5% 10% 5%;
-  }
-
-  header .fa-chevron-down {
-    padding: 10% 0 0%;
-  }
-
-  .headshot {
-    float: left;
-    padding: 0 30px;
-    height: 40%;
-    width: 40%;
+    padding: 5% 5% 2%;
   }
 
   #about .arrows {
@@ -242,19 +229,11 @@
   @media screen and (min-width: 650px) and (max-width: 1024px) {
 
     header h1 {
-      padding: 5% 5% 10%;
+      padding: 10% 5%;
     }
 
-    header {
-      padding: 15% 5% 10% 5%;
-    }
-
-    header .fa-chevron-down {
-      padding: 15% 0 0%;
-    }
-
-    .menu {
-      display: none;
+    #hamburger, #cross {
+      display: none !important;
     }
 
     .navlinks {
@@ -275,6 +254,19 @@
       text-align: center;
       padding: 5% 5%;
     }
+
+    .aboutContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2%;
+    }
+
+    .headshot {
+      object-fit: contain;
+      max-width: 50%;
+      padding: 0;
+    }
   }
   
   @media screen and (max-width: 649px) {
@@ -286,12 +278,8 @@
       padding: 20% 5% 10% 5%;
     }
 
-    header .fa-chevron-down {
-      padding: 25% 0 0%;
-    }
-
     .navlinks {
-      padding: 10% 20px 5% 0;
+      padding: 55px 20px 5% 0;
       line-height: 2;
       text-align: right;
       width: 215px;
@@ -301,7 +289,7 @@
     }
 
     .navlinks a {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .menu:hover {
@@ -319,5 +307,18 @@
     .project p {
       text-align: center;
       padding: 5% 5%;
+    }
+
+    .aboutContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2%;
+    }
+
+    .headshot {
+      object-fit: contain;
+      max-width: 50%;
+      padding: 0;
     }
   }
