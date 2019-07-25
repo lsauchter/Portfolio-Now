@@ -64,8 +64,13 @@
       ),
     url(https://images.unsplash.com/photo-1491944799262-a5be522e2300) center no-repeat;
     background-size: cover;
-    color: white;
+    color: rgb(255, 255, 255);
     height: 100vh;
+    text-shadow:
+    -1px -1px 0 grey, 
+     1px -1px 0 grey, 
+     -1px 1px 0 grey,  
+      1px 1px 0 grey;
   }
 
   header .fa-chevron-down, #about .fa-chevron-down {
