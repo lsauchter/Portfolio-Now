@@ -138,11 +138,12 @@
     padding-right: 60px;
   }
 
-  .jquery {
+  .jquery, .postgres {
     position: absolute;
     bottom: 0;
     width: 85px;
     height: 85px;
+    margin-left: 5px;
   }
 
   h2, h3 {
