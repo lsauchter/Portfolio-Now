@@ -34,6 +34,7 @@
     left: 0;
     right: 0;
     min-height: 50px;
+    z-index: 1;
   }
 
   ul {
@@ -183,6 +184,11 @@
     margin-right: auto; 
   }
 
+  .hidden {
+    background: transparent;
+    border: none;
+  }
+
   @media screen and (min-width: 1000px) {
 
   header h1 {
@@ -288,12 +294,13 @@
     }
 
     .navlinks {
-      padding: 55px 20px 5% 0;
+      padding: 5px 20px 5% 0;
       line-height: 2;
       text-align: right;
       width: 215px;
       position: absolute;
       right: 0;
+      top: 50px;
       display: none;
     }
 
