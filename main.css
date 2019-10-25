@@ -68,10 +68,10 @@
     color: rgb(255, 255, 255);
     height: 100vh;
     text-shadow:
-    -1px -1px 0 grey, 
-     1px -1px 0 grey, 
-     -1px 1px 0 grey,  
-      1px 1px 0 grey;
+    -1px -1px 0 rgb(128, 128, 128, 0.5), 
+     1px -1px 0 rgb(128, 128, 128, 0.5), 
+     -1px 1px 0 rgb(128, 128, 128, 0.5),  
+      1px 1px 0 rgb(128, 128, 128, 0.5);
   }
 
   header .fa-chevron-down, #about .fa-chevron-down {
