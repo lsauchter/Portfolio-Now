@@ -20,6 +20,12 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+h2,
+h3 {
+  font-weight: 800;
+  padding: 2%;
+}
+
 p {
   padding: 7.5%;
 }
@@ -45,6 +51,21 @@ nav {
   z-index: 1;
 }
 
+.navlinks {
+  padding: 5px 20px 5% 0;
+  line-height: 2;
+  text-align: right;
+  width: 215px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+}
+
+.navlinks a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -65,8 +86,20 @@ ul {
   top: 5px;
 }
 
+.menu:hover {
+  cursor: pointer;
+}
+
+#hamburger {
+  display: block;
+}
+
+#cross {
+  display: none;
+}
+
 header {
-  padding: 10% 5% 2% 5%;
+  padding: 20% 5% 10% 5%;
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(rgb(77, 192, 181, 0.8), rgb(77, 192, 181, 0.8)),
     url(Images/hero.png) center no-repeat;
@@ -76,6 +109,19 @@ header {
   text-shadow: -1px -1px 0 rgb(128, 128, 128, 0.5),
     1px -1px 0 rgb(128, 128, 128, 0.5), -1px 1px 0 rgb(128, 128, 128, 0.5),
     1px 1px 0 rgb(128, 128, 128, 0.5);
+}
+
+header h1 {
+  padding: 5% 5% 10%;
+}
+
+header .arrows {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header .fa-chevron-down,
@@ -94,10 +140,17 @@ header .fa-chevron-down,
   text-align: left;
 }
 
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2%;
+}
+
 .headshot {
-  padding: 4% 0 1% 5%;
   object-fit: contain;
-  max-width: 40%;
+  max-width: 50%;
+  padding: 0;
 }
 
 #samples {
@@ -155,15 +208,9 @@ header .fa-chevron-down,
   margin-left: 5px;
 }
 
-h2,
-h3 {
-  font-weight: 800;
-  padding: 2%;
-}
-
 .project p {
-  padding: 5% 5% 5% 20%;
-  text-align: left;
+  text-align: center;
+  padding: 5% 5%;
 }
 
 a {
@@ -178,21 +225,6 @@ a {
   padding: 2%;
 }
 
-.aboutContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-header .arrows {
-  position: absolute;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .invert {
   color: #38a89d;
 }
@@ -202,11 +234,35 @@ header .arrows {
   border: none;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 650px) {
+  header {
+    padding: 10% 5% 2% 5%;
+  }
+
   header h1 {
     padding: 10% 5%;
   }
 
+  #hamburger,
+  #cross {
+    display: none !important;
+  }
+
+  .navlinks {
+    text-align: right;
+    display: inline !important;
+    position: relative;
+    padding: 0;
+    top: 0;
+  }
+
+  .navlinks li {
+    display: inline;
+    padding: 1%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   header {
     padding: 5% 5% 2%;
   }
@@ -215,6 +271,18 @@ header .arrows {
     position: relative;
     width: 100%;
     text-align: center;
+  }
+
+  .aboutContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .headshot {
+    padding: 4% 0 1% 5%;
+    object-fit: contain;
+    max-width: 40%;
   }
 
   .projectText {
@@ -228,125 +296,13 @@ header .arrows {
     display: inline-block;
   }
 
+  .project p {
+    padding: 5% 5% 5% 20%;
+    text-align: left;
+  }
+
   .sample_img {
     width: 50%;
-    padding: 0;
-  }
-
-  #hamburger,
-  #cross {
-    display: none !important;
-  }
-
-  .navlinks {
-    text-align: right;
-    display: inline !important;
-  }
-
-  .navlinks li {
-    display: inline;
-    padding: 1%;
-  }
-
-  .navlinks a {
-    text-decoration: none;
-  }
-}
-
-@media screen and (min-width: 650px) and (max-width: 999px) {
-  header h1 {
-    padding: 10% 5%;
-  }
-
-  #hamburger,
-  #cross {
-    display: none !important;
-  }
-
-  .navlinks {
-    text-align: right;
-    display: inline !important;
-  }
-
-  .navlinks li {
-    display: inline;
-    padding: 1%;
-  }
-
-  .navlinks a {
-    text-decoration: none;
-  }
-
-  .project p {
-    text-align: center;
-    padding: 5% 5%;
-  }
-
-  .aboutContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2%;
-  }
-
-  .headshot {
-    object-fit: contain;
-    max-width: 50%;
-    padding: 0;
-  }
-}
-
-@media screen and (max-width: 649px) {
-  header h1 {
-    padding: 5% 5% 10%;
-  }
-
-  header {
-    padding: 20% 5% 10% 5%;
-  }
-
-  .navlinks {
-    padding: 5px 20px 5% 0;
-    line-height: 2;
-    text-align: right;
-    width: 215px;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    display: none;
-  }
-
-  .navlinks a {
-    text-decoration: none;
-  }
-
-  .menu:hover {
-    cursor: pointer;
-  }
-
-  #hamburger {
-    display: block;
-  }
-
-  #cross {
-    display: none;
-  }
-
-  .project p {
-    text-align: center;
-    padding: 5% 5%;
-  }
-
-  .aboutContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 2%;
-  }
-
-  .headshot {
-    object-fit: contain;
-    max-width: 50%;
     padding: 0;
   }
 }
