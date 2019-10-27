@@ -129,14 +129,20 @@ header .fa-chevron-down,
   color: white;
 }
 
-#about {
+.anchor-landing {
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+.about {
   min-height: 200px;
   padding: 5% 0 2%;
   background-color: #20504f;
   color: white;
 }
 
-#about p {
+.about p {
   text-align: left;
 }
 
@@ -153,13 +159,13 @@ header .fa-chevron-down,
   padding: 0;
 }
 
-#samples {
+.samples {
   background-color: #4dc0b5;
   padding: 3% 0 5% 0;
   color: #ffffff;
 }
 
-#samples h2 {
+.samples h2 {
   padding-bottom: 5%;
 }
 
@@ -184,7 +190,7 @@ header .fa-chevron-down,
   margin-bottom: 5%;
 }
 
-#samples > div:last-child {
+.samples > div:last-child {
   margin-bottom: 0;
 }
 
