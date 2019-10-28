@@ -45,29 +45,31 @@
   </head>
   <body>
     <nav role="navigation">
-      <a id="home" href="#intro" tabindex="1"
-        ><i class="fas fa-laptop-code fa-2x"></i
-      ></a>
-      <div id="hamburger" class="menu" onclick="menu()">
-        <button class="hidden" aria-label="Open the menu">
-          <i
-            class="fas fa-bars fa-2x"
-            alt="Nav menu bars"
-            aria-hidden="true"
-          ></i>
-          <span class="sr-only">Nav Menu Button</span>
-        </button>
-      </div>
-      <div id="cross" class="menu" onclick="closeMenu()">
-        <button class="hidden" aria-label="Close the menu">
-          <i
-            class="fas fa-times fa-2x"
-            alt="Close symbol"
-            aria-hidden="true"
-          ></i>
-          <span class="sr-only">Nav Menu Close Button</span>
-        </button>
-      </div>
+      <a id="home" href="#intro" tabindex="1">
+        <i class="fas fa-laptop-code fa-2x"></i>
+        <span class="sr-only">Home</span>
+      </a>
+
+      <button
+        id="hamburger"
+        class="menu hidden"
+        onclick="menu()"
+        aria-label="Open the menu"
+      >
+        <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+        <span class="sr-only">Nav Menu Button</span>
+      </button>
+
+      <button
+        id="cross"
+        class="menu hidden"
+        onclick="closeMenu()"
+        aria-label="Close the menu"
+      >
+        <i class="fas fa-times fa-2x" aria-hidden="true"></i>
+        <span class="sr-only">Nav Menu Close Button</span>
+      </button>
+
       <div class="navlinks">
         <ul>
           <li><a href="#about" onclick="closeMenu()">About Me</a></li>
@@ -88,6 +90,7 @@
         <div class="arrows">
           <a href="#about">
             <i class="fas fa-chevron-down fa-2x arrow"></i>
+            <span class="sr-only">To "About me"</span>
           </a>
         </div>
       </header>
@@ -116,6 +119,7 @@
         <div class="arrows">
           <a href="#samples">
             <i class="fas fa-chevron-down fa-2x arrow"></i>
+            <span class="sr-only">To "Sample projects"</span>
           </a>
         </div>
       </section>
@@ -134,11 +138,13 @@
                 target="_blank"
                 href="https://github.com/lsauchter/museo-client"
               >
-                <i class="fab fa-github"></i
-              ></a>
+                <i class="fab fa-github"></i>
+                <span class="sr-only">Client GitHub Repo</span>
+              </a>
               <a target="_blank" href="https://github.com/lsauchter/museo-api">
-                <i class="fab fa-github invert"></i
-              ></a>
+                <i class="fab fa-github invert"></i>
+                <span class="sr-only">API GitHub Repo</span>
+              </a>
             </h3>
             <p>
               Discover museums nearby or wherever your travels take you. This
@@ -179,14 +185,16 @@
                 target="_blank"
                 href="https://github.com/lsauchter/techtracker-client"
               >
-                <i class="fab fa-github"></i
-              ></a>
+                <i class="fab fa-github"></i>
+                <span class="sr-only">Client GitHub Repo</span>
+              </a>
               <a
                 target="_blank"
                 href="https://github.com/lsauchter/techtracker-server"
               >
-                <i class="fab fa-github invert"></i
-              ></a>
+                <i class="fab fa-github invert"></i>
+                <span class="sr-only">Server GitHub Repo</span>
+              </a>
             </h3>
             <p>
               An application for tracking inventory status built for the Museum
@@ -228,7 +236,8 @@
                 href="https://github.com/lsauchter/ISS-Locator"
               >
                 <i class="fab fa-github"></i
-              ></a>
+                ><span class="sr-only">GitHub Repo</span>
+              </a>
             </h3>
             <p>
               Find out the next time the International Space Station will be
@@ -275,7 +284,8 @@
                 href="https://github.com/lsauchter/Harry-Potter-Quiz"
               >
                 <i class="fab fa-github"></i
-              ></a>
+                ><span class="sr-only">GitHub Repo</span>
+              </a>
             </h3>
             <p>
               A quiz program utilizing jQuery to allow users to submit answers,
@@ -308,21 +318,26 @@
       </section>
     </main>
     <footer id="contact" role="contentinfo">
-      <a href="mailto:lsauchter@gmail.com"
-        ><i class="far fa-envelope fa-3x"></i
-      ></a>
-      <a target="_blank" href="https://github.com/lsauchter"
-        ><i class="fab fa-github-square fa-3x"></i
-      ></a>
-      <a target="_blank" href="https://www.linkedin.com/in/laurenauchter"
-        ><i class="fab fa-linkedin fa-3x"></i
-      ></a>
-      <a target="_blank" href="https://twitter.com/LaurenAuchter"
-        ><i class="fab fa-twitter-square fa-3x"></i
-      ></a>
+      <a href="mailto:lsauchter@gmail.com">
+        <i class="far fa-envelope fa-3x"></i>
+        <span class="sr-only">Email</span>
+      </a>
+      <a target="_blank" href="https://github.com/lsauchter">
+        <i class="fab fa-github-square fa-3x"></i>
+        <span class="sr-only">GitHub</span>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/laurenauchter">
+        <i class="fab fa-linkedin fa-3x"></i>
+        <span class="sr-only">LinkedIn</span>
+      </a>
+      <a target="_blank" href="https://twitter.com/LaurenAuchter">
+        <i class="fab fa-twitter-square fa-3x"></i>
+        <span class="sr-only">Twitter</span>
+      </a>
       <div class="arrows">
         <a href="#intro">
           <i class="fas fa-chevron-up fa-2x arrow"></i>
+          <span class="sr-only">To "Intro"</span>
         </a>
       </div>
     </footer>
