@@ -98,6 +98,10 @@ ul {
   display: none;
 }
 
+.sr-only {
+  visibility: hidden;
+}
+
 header {
   padding: 20% 5% 10% 5%;
   font-family: "Montserrat", sans-serif;
