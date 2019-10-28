@@ -142,7 +142,8 @@ header .arrows {
 }
 
 header .fa-chevron-down,
-.about .fa-chevron-down {
+.about .fa-chevron-down,
+.white {
   color: white;
 }
 
