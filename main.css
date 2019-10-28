@@ -113,14 +113,13 @@ a ~ a {
 header {
   padding: 20% 5% 10% 5%;
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(rgb(77, 192, 181, 0.8), rgb(77, 192, 181, 0.8)),
+  background: linear-gradient(rgb(31, 122, 140, 0.8), rgb(31, 122, 140, 0.8)),
     url(Images/hero.png) center no-repeat;
   background-size: cover;
-  color: rgb(255, 255, 255);
+  color: white;
   height: 100vh;
-  text-shadow: -1px -1px 0 rgb(128, 128, 128, 0.5),
-    1px -1px 0 rgb(128, 128, 128, 0.5), -1px 1px 0 rgb(128, 128, 128, 0.5),
-    1px 1px 0 rgb(128, 128, 128, 0.5);
+  text-shadow: -1px -1px 0 rgb(31, 122, 140), 1px -1px 0 rgb(31, 122, 140),
+    -1px 1px 0 rgb(31, 122, 140), 1px 1px 0 rgb(31, 122, 140);
 }
 
 header h1 {
@@ -137,7 +136,7 @@ header .arrows {
 }
 
 header .fa-chevron-down,
-#about .fa-chevron-down {
+.about .fa-chevron-down {
   color: white;
 }
 
@@ -150,7 +149,7 @@ header .fa-chevron-down,
 .about {
   min-height: 200px;
   padding: 5% 0 2%;
-  background-color: #20504f;
+  background-color: #023c40;
   color: white;
 }
 
@@ -172,7 +171,7 @@ header .fa-chevron-down,
 }
 
 .samples {
-  background-color: #4dc0b5;
+  background-color: #1f7a8c;
   padding: 3% 0 5% 0;
   color: #ffffff;
 }
@@ -187,7 +186,7 @@ header .fa-chevron-down,
 }
 
 .livepage {
-  color: #38a89d;
+  color: #1f7a8c;
 }
 
 .project {
@@ -244,7 +243,7 @@ a {
 }
 
 .invert {
-  color: #38a89d;
+  color: #1f7a8c;
 }
 
 .hidden {
