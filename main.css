@@ -120,7 +120,7 @@ header {
   font-family: "Montserrat", sans-serif;
   background-color: rgb(31, 122, 140);
   background: linear-gradient(rgb(31, 122, 140, 0.8), rgb(31, 122, 140, 0.8)),
-    url(Images/hero.png) center no-repeat;
+    url(Images/hero.jpg) center no-repeat;
   background-size: cover;
   color: white;
   height: 100vh;
