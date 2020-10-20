@@ -268,6 +268,10 @@ header .fa-chevron-down,
   margin-bottom: 0;
 }
 
+.colored {
+  color: #1f7a8c !important;
+}
+
 .tools {
   position: relative;
   font-size: 3em;
@@ -288,10 +292,6 @@ a {
 
 #contact .fa-chevron-up {
   padding: 2%;
-}
-
-.invert {
-  color: #1f7a8c;
 }
 
 .hidden {
