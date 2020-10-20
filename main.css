@@ -226,11 +226,6 @@ header .fa-chevron-down,
   padding-bottom: 4%;
 }
 
-.skills p {
-  text-align: center;
-  padding: 0;
-}
-
 .headshot {
   object-fit: cover;
   max-width: 50%;
