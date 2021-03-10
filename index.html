@@ -1,125 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-143506234-2"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-143506234-2");
-    </script>
-    <link rel="icon" href="Images/laptop.png" />
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Portfolio of work for Lauren Auchter, web developer. Webpage includes images of sample work, links to GitHub and live pages, as well as contact information."
-    />
-    <meta
-      name="keywords"
-      content="Web Developer, Software Engineer, HTML, CSS, JavaScript, jQuery, React, Node.js, Express, Knex, PostgreSQL, SQL"
-    />
-    <title>Lauren Auchter Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css" />
-  </head>
-  <body>
-    <nav role="navigation">
-      <a id="home" href="#intro">
-        <i class="fas fa-laptop-code fa-2x"></i>
-        <span class="sr-only">Home</span>
-      </a>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-143506234-2"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+			gtag("config", "UA-143506234-2");
+		</script>
+		<link rel="icon" href="Images/laptop.png" />
+		<meta charset="UTF-8" />
+		<meta
+			name="description"
+			content="Portfolio of work for Lauren Auchter, web developer. Webpage includes images of sample work, links to GitHub and live pages, as well as contact information."
+		/>
+		<meta
+			name="keywords"
+			content="Web Developer, Software Engineer, HTML, CSS, JavaScript, jQuery, React, Node.js, Express, Knex, PostgreSQL, SQL"
+		/>
+		<title>Lauren Auchter Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat|Roboto"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+			integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+		/>
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	<body>
+		<nav role="navigation">
+			<a id="home" href="#intro">
+				<i class="fas fa-laptop-code fa-2x"></i>
+				<span class="sr-only">Home</span>
+			</a>
 
-      <button
-        id="hamburger"
-        class="menu hidden"
-        onclick="menu()"
-        aria-label="Open the menu"
-      >
-        <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
-        <span class="sr-only">Nav Menu Button</span>
-      </button>
+			<button
+				id="hamburger"
+				class="menu hidden"
+				onclick="menu()"
+				aria-label="Open the menu"
+			>
+				<i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+				<span class="sr-only">Nav Menu Button</span>
+			</button>
 
-      <button
-        id="cross"
-        class="menu hidden"
-        onclick="closeMenu()"
-        aria-label="Close the menu"
-      >
-        <i class="fas fa-times fa-2x" aria-hidden="true"></i>
-        <span class="sr-only">Nav Menu Close Button</span>
-      </button>
+			<button
+				id="cross"
+				class="menu hidden"
+				onclick="closeMenu()"
+				aria-label="Close the menu"
+			>
+				<i class="fas fa-times fa-2x" aria-hidden="true"></i>
+				<span class="sr-only">Nav Menu Close Button</span>
+			</button>
 
-      <div class="navlinks">
-        <ul>
-          <li><a href="#about" onclick="closeMenu()">About Me</a></li>
-          <li><a href="#samples" onclick="closeMenu()">Sample Projects</a></li>
-          <li>
-            <a href="Images/resume.pdf" target="_blank" onclick="closeMenu()"
-              >Resume</a
-            >
-          </li>
-          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <main role="main">
-      <header id="intro" role="banner">
-        <h1 class="typing">Hi, I'm Lauren</h1>
-        <h2 class="wait">I'm a fullstack software engineer based in Raleigh/Durham, NC</h2>
-        <div class="arrows">
-          <a href="#about">
-            <i class="fas fa-chevron-down fa-2x arrow"></i>
-            <span class="sr-only">To "About me"</span>
-          </a>
-        </div>
-      </header>
+			<div class="navlinks">
+				<ul>
+					<li><a href="#about" onclick="closeMenu()">About Me</a></li>
+					<li>
+						<a href="#samples" onclick="closeMenu()"
+							>Sample Projects</a
+						>
+					</li>
+					<li>
+						<a
+							href="Images/resume.pdf"
+							target="_blank"
+							onclick="closeMenu()"
+							>Resume</a
+						>
+					</li>
+					<li>
+						<a href="#contact" onclick="closeMenu()">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main role="main">
+			<header id="intro" role="banner">
+				<h1 class="typing">Hi, I'm Lauren</h1>
+				<h2 class="wait">
+					I'm a fullstack software engineer based in Raleigh/Durham,
+					NC
+				</h2>
+				<div class="arrows">
+					<a href="#about">
+						<i class="fas fa-chevron-down fa-2x arrow"></i>
+						<span class="sr-only">To "About me"</span>
+					</a>
+				</div>
+			</header>
 
-      <div class="anchor-landing" id="about"></div>
-      <section class="about">
-        <span></span>
-        <h2>About Me</h2>
-        <div class="aboutContainer">
-          <img
-            class="headshot"
-            src="Images/headshot.jpg"
-            alt="Lauren Headshot"
-          />
-          <div>
-            <h3 class="about_title">My Bio</h3>
-            <p class="about_text">
-              I'm a fullstack software engineer and a graduate of Thinkful's Engineering Flex program.
-              As a life-long learner, I'm constantly researching and exploring new technologies and am always working to
-              expand my knowledge base. I'm excited by creating polished, accessible, and responsive
-              applications and fascinated with putting together the puzzle of
-              code. Having worked previously in eduction I love getting to work in edtech and bring my expertise to
-              developing useful products. Check out examples of some of my personal projects below!
-            </p>
-            <div class="about_skills">
-              <h3 class="about_title">My skills</h3>
-              <!-- Devicons - saving for potential future setup -->
-              <!-- <i class="devicon-javascript-plain"></i>
+			<div class="anchor-landing" id="about"></div>
+			<section class="about">
+				<span></span>
+				<h2>About Me</h2>
+				<div class="aboutContainer">
+					<img
+						class="headshot"
+						src="Images/headshot.jpg"
+						alt="Lauren Headshot"
+					/>
+					<div>
+						<h3 class="about_title">My Bio</h3>
+						<p class="about_text">
+							I'm a fullstack software engineer and a graduate of
+							Thinkful's Engineering Flex program. As a life-long
+							learner, I'm constantly researching and exploring
+							new technologies and am always working to expand my
+							knowledge base. I'm excited by creating polished,
+							accessible, and responsive applications and
+							fascinated with putting together the puzzle of code.
+							Having worked previously in eduction I love getting
+							to work in edtech and bring my expertise to
+							developing useful products. Check out examples of
+							some of my personal projects below!
+						</p>
+						<div class="about_skills">
+							<h3 class="about_title">My skills</h3>
+							<!-- Devicons - saving for potential future setup -->
+							<!-- <i class="devicon-javascript-plain"></i>
               <i class="devicon-amazonwebservices-plain-wordmark"></i>
               <i class="devicon-react-original-wordmark"></i>
               <i class="devicon-html5-plain-wordmark"></i>
@@ -134,233 +154,260 @@
               <i class="devicon-amazonwebservices-plain-wordmark"></i>
               <i class="devicon-heroku-original-wordmark"></i>
               <i class="devicon-git-plain-wordmark"></i> -->
-              <p class="about_text">JavaScript | React | HTML | CSS | SASS | MaterialUI | jQuery</p>
-              <p class="about_text">Jest | Mocha | Capybara | Selenium</p>
-              <p class="about_text">Node.Js | Express | Ruby | Rails | Elixir | Postgres | SQL</p>
-              <p class="about_text">AWS | Heroku | Vercel | Git | REST</p>
-          </div>
-        </div>
-        </div>
-        <div class="arrows">
-          <a href="#samples">
-            <i class="fas fa-chevron-down fa-2x arrow"></i>
-            <span class="sr-only white">To "Sample projects"</span>
-          </a>
-        </div>
-      </section>
+							<p class="about_text">
+								JavaScript | React | HTML | CSS | SASS |
+								MaterialUI | jQuery
+							</p>
+							<p class="about_text">
+								Jest | Mocha | Capybara | Selenium
+							</p>
+							<p class="about_text">
+								Node.Js | Express | Ruby | Rails | Elixir |
+								Postgres | SQL
+							</p>
+							<p class="about_text">
+								AWS | Heroku | Vercel | Git | REST
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="arrows">
+					<a href="#samples">
+						<i class="fas fa-chevron-down fa-2x arrow"></i>
+						<span class="sr-only white">To "Sample projects"</span>
+					</a>
+				</div>
+			</section>
 
-      <div class="anchor-landing" id="samples"></div>
-      <section class="samples">
-        <h2>Sample Projects</h2>
+			<div class="anchor-landing" id="samples"></div>
+			<section class="samples">
+				<h2>Sample Projects</h2>
 
-        <div class="project">
-          <div class="projectText">
-            <h3>
-              <a class="livepage" target="_blank" href="https://museo.now.sh/">
-                museo
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/lsauchter/museo-client"
-              >
-                <i class="devicon-github-plain"></i>
-                <span class="sr-only">Client GitHub Repo</span>
-              </a>
-              <a target="_blank" href="https://github.com/lsauchter/museo-api">
-                <i class="devicon-github-plain colored"></i>
-                <span class="sr-only">API GitHub Repo</span>
-              </a>
-            </h3>
-            <p>
-              Discover museums nearby or wherever your travels take you. This
-              app uses React for client side code, Node.js and Express for the
-              API, and PostgreSQL for the database.
-            </p>
-            <h4>Tools</h4>
-            <div class="tools">
-              <i class="devicon-react-original-wordmark"></i>
-              <i class="devicon-nodejs-plain"></i>
-              <i class="devicon-postgresql-plain-wordmark"></i>
-            </div>
-          </div>
-          <a target="_blank" href="https://museo.now.sh/">
-            <img
-              class="sample_img"
-              src="Images/museo.jpg"
-              alt="museo landing page image"
-            />
-          </a>
-        </div>
+				<div class="project">
+					<div class="projectText">
+						<h3>
+							<a
+								class="livepage"
+								target="_blank"
+								href="https://museo.now.sh/"
+							>
+								museo
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/lsauchter/museo-client"
+							>
+								<i class="devicon-github-plain"></i>
+								<span class="sr-only">Client GitHub Repo</span>
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/lsauchter/museo-api"
+							>
+								<i class="devicon-github-plain colored"></i>
+								<span class="sr-only">API GitHub Repo</span>
+							</a>
+						</h3>
+						<p>
+							Discover museums nearby or wherever your travels
+							take you. This app uses React for client side code,
+							Node.js and Express for the API, and PostgreSQL for
+							the database.
+						</p>
+						<h4>Tools</h4>
+						<div class="tools">
+							<i class="devicon-react-original-wordmark"></i>
+							<i class="devicon-nodejs-plain"></i>
+							<i class="devicon-postgresql-plain-wordmark"></i>
+						</div>
+					</div>
+					<a target="_blank" href="https://museo.now.sh/">
+						<img
+							class="sample_img"
+							src="Images/museo.jpg"
+							alt="museo landing page image"
+						/>
+					</a>
+				</div>
 
-        <div class="project">
-          <div class="projectText">
-            <h3>
-              <a
-                class="livepage"
-                target="_blank"
-                href="https://techtracker.lsauchter.now.sh/"
-              >
-                TechTracker
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/lsauchter/techtracker-client"
-              >
-                <i class="devicon-github-plain"></i>
-                <span class="sr-only">Client GitHub Repo</span>
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/lsauchter/techtracker-server"
-              >
-                <i class="devicon-github-plain colored"></i>
-                <span class="sr-only">Server GitHub Repo</span>
-              </a>
-            </h3>
-            <p>
-              An application for tracking inventory status built for the Museum
-              of Life and Science. This app uses React for client side code,
-              Node.js and Express for the API, and PostgreSQL for the database.
-            </p>
-            <h4>Tools</h4>
-            <div class="tools">
-              <i class="devicon-react-original-wordmark"></i>
-              <i class="devicon-nodejs-plain"></i>
-              <i class="devicon-postgresql-plain-wordmark"></i>
-            </div>
-          </div>
-          <a target="_blank" href="https://techtracker.lsauchter.now.sh/">
-            <img
-              class="sample_img"
-              src="Images/techtracker.jpg"
-              alt="TechTracker check out page image"
-            />
-          </a>
-        </div>
+				<div class="project">
+					<div class="projectText">
+						<h3>
+							<a
+								class="livepage"
+								target="_blank"
+								href="https://techtracker.lsauchter.now.sh/"
+							>
+								TechTracker
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/lsauchter/techtracker-client"
+							>
+								<i class="devicon-github-plain"></i>
+								<span class="sr-only">Client GitHub Repo</span>
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/lsauchter/techtracker-server"
+							>
+								<i class="devicon-github-plain colored"></i>
+								<span class="sr-only">Server GitHub Repo</span>
+							</a>
+						</h3>
+						<p>
+							An application for tracking inventory status built
+							for the Museum of Life and Science. This app uses
+							React for client side code, Node.js and Express for
+							the API, and PostgreSQL for the database.
+						</p>
+						<h4>Tools</h4>
+						<div class="tools">
+							<i class="devicon-react-original-wordmark"></i>
+							<i class="devicon-nodejs-plain"></i>
+							<i class="devicon-postgresql-plain-wordmark"></i>
+						</div>
+					</div>
+					<a
+						target="_blank"
+						href="https://techtracker.lsauchter.now.sh/"
+					>
+						<img
+							class="sample_img"
+							src="Images/techtracker.jpg"
+							alt="TechTracker check out page image"
+						/>
+					</a>
+				</div>
 
-        <div class="project">
-          <div class="projectText">
-            <h3>
-              <a
-                class="livepage"
-                target="_blank"
-                href="https://lsauchter.github.io/ISS-Locator"
-              >
-                International Space Station Locator
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/lsauchter/ISS-Locator"
-              >
-                <i class="devicon-github-plain"></i>
-                <span class="sr-only">GitHub Repo</span>
-              </a>
-            </h3>
-            <p>
-              Find out the next time the International Space Station will be
-              visible from your location as the map live-tracks the ISS. This
-              app uses data from the
-              <a href="http://open-notify.org/">Open Notify ISS</a>,
-              <a href="https://leafletjs.com/">Leaflet</a>,
-              <a href="https://www.mapbox.com/">Mapbox</a>, and
-              <a href="https://www.zipcodeapi.com/">Zip Code</a> APIs.
-            </p>
-            <h4>Tools</h4>
-            <div class="tools">
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-jquery-plain-wordmark"></i>
-            </div>
-          </div>
-          <a target="_blank" href="https://lsauchter.github.io/ISS-Locator">
-            <img
-              class="sample_img"
-              src="Images/ISSLocator.jpg"
-              alt="ISS web page image"
-            />
-          </a>
-        </div>
+				<div class="project">
+					<div class="projectText">
+						<h3>
+							<a
+								class="livepage"
+								target="_blank"
+								href="https://lsauchter.github.io/ISS-Locator"
+							>
+								International Space Station Locator
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/lsauchter/ISS-Locator"
+							>
+								<i class="devicon-github-plain"></i>
+								<span class="sr-only">GitHub Repo</span>
+							</a>
+						</h3>
+						<p>
+							Find out the next time the International Space
+							Station will be visible from your location as the
+							map live-tracks the ISS. This app uses data from the
+							<a href="http://open-notify.org/">Open Notify ISS</a
+							>, <a href="https://leafletjs.com/">Leaflet</a>,
+							<a href="https://www.mapbox.com/">Mapbox</a>, and
+							<a href="https://www.zipcodeapi.com/">Zip Code</a>
+							APIs.
+						</p>
+						<h4>Tools</h4>
+						<div class="tools">
+							<i class="devicon-html5-plain-wordmark"></i>
+							<i class="devicon-css3-plain-wordmark"></i>
+							<i class="devicon-jquery-plain-wordmark"></i>
+						</div>
+					</div>
+					<a
+						target="_blank"
+						href="https://lsauchter.github.io/ISS-Locator"
+					>
+						<img
+							class="sample_img"
+							src="Images/ISSLocator.jpg"
+							alt="ISS web page image"
+						/>
+					</a>
+				</div>
 
-        <div class="project">
-          <div class="projectText">
-            <h3>
-              <a
-                class="livepage"
-                target="_blank"
-                href="https://lsauchter.github.io/Harry-Potter-Quiz"
-              >
-                Harry Potter Quiz
-              </a>
-              <a
-                target="_blank"
-                href="https://github.com/lsauchter/Harry-Potter-Quiz"
-              >
-                <i class="devicon-github-plain"></i>
-                <span class="sr-only">GitHub Repo</span>
-              </a>
-            </h3>
-            <p>
-              A quiz program utilizing jQuery to allow users to submit answers,
-              receive feedback, and track their score.
-            </p>
-            <h4>Tools</h4>
-            <div class="tools">
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-jquery-plain-wordmark"></i>
-            </div>
-          </div>
-          <a
-            class="livepage"
-            target="_blank"
-            href="https://lsauchter.github.io/Harry-Potter-Quiz"
-          >
-            <img
-              class="sample_img"
-              src="Images/HPQuiz.jpg"
-              alt="Harry Potter quiz image"
-            />
-          </a>
-        </div>
-      </section>
-    </main>
-    <footer id="contact" role="contentinfo">
-      <a href="mailto:lsauchter@gmail.com">
-        <i class="far fa-envelope fa-3x"></i>
-        <span class="sr-only">Email</span>
-      </a>
-      <a target="_blank" href="https://www.linkedin.com/in/laurenauchter">
-        <i class="fab fa-linkedin fa-3x"></i>
-        <span class="sr-only">LinkedIn</span>
-      </a>
-      <a target="_blank" href="https://twitter.com/LaurenAuchter">
-        <i class="fab fa-twitter fa-3x"></i>
-        <span class="sr-only">Twitter</span>
-      </a>
-      <a target="_blank" href="https://github.com/lsauchter">
-        <i class="fab fa-github fa-3x"></i>
-        <span class="sr-only">GitHub</span>
-      </a>
-      <a target="_blank" href="https://gitlab.com/lauren.auchter">
-        <i class="fab fa-gitlab fa-3x"></i>
-        <span class="sr-only">GitLab</span>
-      </a>
-      <div class="arrows">
-        <a href="#intro">
-          <i class="fas fa-chevron-up fa-2x arrow"></i>
-          <span class="sr-only">To "Intro"</span>
-        </a>
-      </div>
-      <p class="copyright">
-        <i class="far fa-copyright fa-1x" ></i>
-        2019 Lauren Auchter
-      </p>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.4.0.min.js"
-      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="index.js"></script>
-  </body>
+				<div class="project">
+					<div class="projectText">
+						<h3>
+							<a
+								class="livepage"
+								target="_blank"
+								href="https://lsauchter.github.io/Harry-Potter-Quiz"
+							>
+								Harry Potter Quiz
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/lsauchter/Harry-Potter-Quiz"
+							>
+								<i class="devicon-github-plain"></i>
+								<span class="sr-only">GitHub Repo</span>
+							</a>
+						</h3>
+						<p>
+							A quiz program utilizing jQuery to allow users to
+							submit answers, receive feedback, and track their
+							score.
+						</p>
+						<h4>Tools</h4>
+						<div class="tools">
+							<i class="devicon-html5-plain-wordmark"></i>
+							<i class="devicon-css3-plain-wordmark"></i>
+							<i class="devicon-jquery-plain-wordmark"></i>
+						</div>
+					</div>
+					<a
+						class="livepage"
+						target="_blank"
+						href="https://lsauchter.github.io/Harry-Potter-Quiz"
+					>
+						<img
+							class="sample_img"
+							src="Images/HPQuiz.jpg"
+							alt="Harry Potter quiz image"
+						/>
+					</a>
+				</div>
+			</section>
+		</main>
+		<footer id="contact" role="contentinfo">
+			<a href="mailto:lauchter.dev@gmail.com">
+				<i class="far fa-envelope fa-3x"></i>
+				<span class="sr-only">Email</span>
+			</a>
+			<a target="_blank" href="https://www.linkedin.com/in/laurenauchter">
+				<i class="fab fa-linkedin fa-3x"></i>
+				<span class="sr-only">LinkedIn</span>
+			</a>
+			<a target="_blank" href="https://twitter.com/LaurenAuchter">
+				<i class="fab fa-twitter fa-3x"></i>
+				<span class="sr-only">Twitter</span>
+			</a>
+			<a target="_blank" href="https://github.com/lsauchter">
+				<i class="fab fa-github fa-3x"></i>
+				<span class="sr-only">GitHub</span>
+			</a>
+			<a target="_blank" href="https://gitlab.com/lauren.auchter">
+				<i class="fab fa-gitlab fa-3x"></i>
+				<span class="sr-only">GitLab</span>
+			</a>
+			<div class="arrows">
+				<a href="#intro">
+					<i class="fas fa-chevron-up fa-2x arrow"></i>
+					<span class="sr-only">To "Intro"</span>
+				</a>
+			</div>
+			<p class="copyright">
+				<i class="far fa-copyright fa-1x"></i>
+				2019 Lauren Auchter
+			</p>
+		</footer>
+		<script
+			src="https://code.jquery.com/jquery-3.4.0.min.js"
+			integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+			crossorigin="anonymous"
+		></script>
+		<script type="text/javascript" src="index.js"></script>
+	</body>
 </html>
