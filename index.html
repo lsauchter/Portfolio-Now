@@ -22,7 +22,7 @@
 		/>
 		<meta
 			name="keywords"
-			content="Web Developer, Software Engineer, HTML, CSS, JavaScript, jQuery, React, Node.js, Express, Knex, PostgreSQL, SQL"
+			content="Web Developer, Software Engineer, JavaScript, React, Ruby, Rails, AWS, HTML, CSS, Node.js, Express, PostgreSQL, SQL"
 		/>
 		<title>Lauren Auchter Portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -50,7 +50,7 @@
 	<body>
 		<nav role="navigation">
 			<a id="home" href="#intro">
-				<i class="fas fa-laptop-code fa-2x"></i>
+				<i class="fas fa-laptop-code fa-2x" aria-hidden="true"></i>
 				<span class="sr-only">Home</span>
 			</a>
 
@@ -76,7 +76,9 @@
 
 			<div class="navlinks">
 				<ul>
-					<li><a href="#about" onclick="closeMenu()">About Me</a></li>
+					<li>
+						<a href="#about" onclick="closeMenu()">About Me</a>
+					</li>
 					<li>
 						<a href="#samples" onclick="closeMenu()"
 							>Sample Projects</a
@@ -87,8 +89,9 @@
 							href="Images/resume.pdf"
 							target="_blank"
 							onclick="closeMenu()"
-							>Resume</a
 						>
+							Resume
+						</a>
 					</li>
 					<li>
 						<a href="#contact" onclick="closeMenu()">Contact</a>
@@ -105,7 +108,10 @@
 				</h2>
 				<div class="arrows">
 					<a href="#about">
-						<i class="fas fa-chevron-down fa-2x arrow"></i>
+						<i
+							class="fas fa-chevron-down fa-2x arrow"
+							aria-hidden="true"
+						></i>
 						<span class="sr-only">To "About me"</span>
 					</a>
 				</div>
@@ -140,20 +146,20 @@
 							<h3 class="about_title">My skills</h3>
 							<!-- Devicons - saving for potential future setup -->
 							<!-- <i class="devicon-javascript-plain"></i>
-              <i class="devicon-amazonwebservices-plain-wordmark"></i>
-              <i class="devicon-react-original-wordmark"></i>
-              <i class="devicon-html5-plain-wordmark"></i>
-              <i class="devicon-css3-plain-wordmark"></i>
-              <i class="devicon-sass-original"></i>
-              <i class="devicon-jquery-plain-wordmark"></i>
-              <i class="devicon-nodejs-plain"></i>
-              <i class="devicon-express-original-wordmark"></i>
-              <i class="devicon-ruby-plain-wordmark"></i>
-              <i class="devicon-rails-plain-wordmark"></i>
-              <i class="devicon-postgresql-plain-wordmark"></i>
-              <i class="devicon-amazonwebservices-plain-wordmark"></i>
-              <i class="devicon-heroku-original-wordmark"></i>
-              <i class="devicon-git-plain-wordmark"></i> -->
+				<i class="devicon-amazonwebservices-plain-wordmark"></i>
+				<i class="devicon-react-original-wordmark"></i>
+				<i class="devicon-html5-plain-wordmark"></i>
+				<i class="devicon-css3-plain-wordmark"></i>
+				<i class="devicon-sass-original"></i>
+				<i class="devicon-jquery-plain-wordmark"></i>
+				<i class="devicon-nodejs-plain"></i>
+				<i class="devicon-express-original-wordmark"></i>
+				<i class="devicon-ruby-plain-wordmark"></i>
+				<i class="devicon-rails-plain-wordmark"></i>
+				<i class="devicon-postgresql-plain-wordmark"></i>
+				<i class="devicon-amazonwebservices-plain-wordmark"></i>
+				<i class="devicon-heroku-original-wordmark"></i>
+				<i class="devicon-git-plain-wordmark"></i> -->
 							<p class="about_text">
 								JavaScript | React | HTML | CSS | SASS |
 								MaterialUI | jQuery
@@ -173,8 +179,11 @@
 				</div>
 				<div class="arrows">
 					<a href="#samples">
-						<i class="fas fa-chevron-down fa-2x arrow"></i>
-						<span class="sr-only white">To "Sample projects"</span>
+						<i
+							class="fas fa-chevron-down fa-2x arrow"
+							aria-hidden="true"
+						></i>
+						<span class="sr-only">To "Sample projects"</span>
 					</a>
 				</div>
 			</section>
@@ -189,6 +198,71 @@
 							<a
 								class="livepage"
 								target="_blank"
+								href="https://cpost.herokuapp.com"
+							>
+								cpost
+							</a>
+							<a
+								target="_blank"
+								href="https://github.com/lsauchter/compost"
+								class="repo"
+							>
+								<i
+									class="devicon-github-plain"
+									aria-hidden="true"
+								></i>
+								<span class="sr-only">GitHub Repo</span>
+							</a>
+						</h3>
+						<p>
+							Track the amount of compost you're keeping out of
+							your waste stream. This is a monorepo React on Rails
+							app utilizing MaterialUI for some React components
+							and styles and Devise for authentication.
+						</p>
+						<h4>Tools</h4>
+						<div class="tools">
+							<i
+								class="devicon-react-original-wordmark"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-materialui-plain"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-rails-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-postgresql-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<span class="sr-only">React</span>
+							<span class="sr-only">MaterialUI</span>
+							<span class="sr-only">Rails</span>
+							<span class="sr-only">PostgreSQL</span>
+						</div>
+					</div>
+					<a
+						class="livepage"
+						target="_blank"
+						href="https://cpost.herokuapp.com"
+					>
+						<img
+							class="sample_img"
+							src="Images/compost.jpg"
+							alt="Harry Potter quiz image"
+						/>
+					</a>
+				</div>
+
+				<div class="project">
+					<div class="projectText">
+						<h3>
+							<a
+								class="livepage"
+								target="_blank"
 								href="https://museo.now.sh/"
 							>
 								museo
@@ -196,15 +270,23 @@
 							<a
 								target="_blank"
 								href="https://github.com/lsauchter/museo-client"
+								class="repo"
 							>
-								<i class="devicon-github-plain"></i>
+								<i
+									class="devicon-github-plain"
+									aria-hidden="true"
+								></i>
 								<span class="sr-only">Client GitHub Repo</span>
 							</a>
 							<a
 								target="_blank"
 								href="https://github.com/lsauchter/museo-api"
+								class="repo"
 							>
-								<i class="devicon-github-plain colored"></i>
+								<i
+									class="devicon-github-plain colored"
+									aria-hidden="true"
+								></i>
 								<span class="sr-only">API GitHub Repo</span>
 							</a>
 						</h3>
@@ -216,9 +298,26 @@
 						</p>
 						<h4>Tools</h4>
 						<div class="tools">
-							<i class="devicon-react-original-wordmark"></i>
-							<i class="devicon-nodejs-plain"></i>
-							<i class="devicon-postgresql-plain-wordmark"></i>
+							<i
+								class="devicon-react-original-wordmark"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-css3-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-nodejs-plain"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-postgresql-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<span class="sr-only">React</span>
+							<span class="sr-only">CSS</span>
+							<span class="sr-only">NodeJS</span>
+							<span class="sr-only">PostgreSQL</span>
 						</div>
 					</div>
 					<a target="_blank" href="https://museo.now.sh/">
@@ -243,15 +342,23 @@
 							<a
 								target="_blank"
 								href="https://github.com/lsauchter/techtracker-client"
+								class="repo"
 							>
-								<i class="devicon-github-plain"></i>
+								<i
+									class="devicon-github-plain"
+									aria-hidden="true"
+								></i>
 								<span class="sr-only">Client GitHub Repo</span>
 							</a>
 							<a
 								target="_blank"
 								href="https://github.com/lsauchter/techtracker-server"
+								class="repo"
 							>
-								<i class="devicon-github-plain colored"></i>
+								<i
+									class="devicon-github-plain colored"
+									aria-hidden="true"
+								></i>
 								<span class="sr-only">Server GitHub Repo</span>
 							</a>
 						</h3>
@@ -263,9 +370,26 @@
 						</p>
 						<h4>Tools</h4>
 						<div class="tools">
-							<i class="devicon-react-original-wordmark"></i>
-							<i class="devicon-nodejs-plain"></i>
-							<i class="devicon-postgresql-plain-wordmark"></i>
+							<i
+								class="devicon-react-original-wordmark"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-css3-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-nodejs-plain"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-postgresql-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<span class="sr-only">React</span>
+							<span class="sr-only">CSS</span>
+							<span class="sr-only">NodeJS</span>
+							<span class="sr-only">PostgreSQL</span>
 						</div>
 					</div>
 					<a
@@ -288,13 +412,17 @@
 								target="_blank"
 								href="https://lsauchter.github.io/ISS-Locator"
 							>
-								International Space Station Locator
+								ISS Locator
 							</a>
 							<a
 								target="_blank"
 								href="https://github.com/lsauchter/ISS-Locator"
+								class="repo"
 							>
-								<i class="devicon-github-plain"></i>
+								<i
+									class="devicon-github-plain"
+									aria-hidden="true"
+								></i>
 								<span class="sr-only">GitHub Repo</span>
 							</a>
 						</h3>
@@ -310,9 +438,21 @@
 						</p>
 						<h4>Tools</h4>
 						<div class="tools">
-							<i class="devicon-html5-plain-wordmark"></i>
-							<i class="devicon-css3-plain-wordmark"></i>
-							<i class="devicon-jquery-plain-wordmark"></i>
+							<i
+								class="devicon-html5-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-css3-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<i
+								class="devicon-jquery-plain-wordmark"
+								aria-hidden="true"
+							></i>
+							<span class="sr-only">HTML</span>
+							<span class="sr-only">CSS</span>
+							<span class="sr-only">jQuery</span>
 						</div>
 					</div>
 					<a
@@ -326,80 +466,40 @@
 						/>
 					</a>
 				</div>
-
-				<div class="project">
-					<div class="projectText">
-						<h3>
-							<a
-								class="livepage"
-								target="_blank"
-								href="https://lsauchter.github.io/Harry-Potter-Quiz"
-							>
-								Harry Potter Quiz
-							</a>
-							<a
-								target="_blank"
-								href="https://github.com/lsauchter/Harry-Potter-Quiz"
-							>
-								<i class="devicon-github-plain"></i>
-								<span class="sr-only">GitHub Repo</span>
-							</a>
-						</h3>
-						<p>
-							A quiz program utilizing jQuery to allow users to
-							submit answers, receive feedback, and track their
-							score.
-						</p>
-						<h4>Tools</h4>
-						<div class="tools">
-							<i class="devicon-html5-plain-wordmark"></i>
-							<i class="devicon-css3-plain-wordmark"></i>
-							<i class="devicon-jquery-plain-wordmark"></i>
-						</div>
-					</div>
-					<a
-						class="livepage"
-						target="_blank"
-						href="https://lsauchter.github.io/Harry-Potter-Quiz"
-					>
-						<img
-							class="sample_img"
-							src="Images/HPQuiz.jpg"
-							alt="Harry Potter quiz image"
-						/>
-					</a>
-				</div>
 			</section>
 		</main>
 		<footer id="contact" role="contentinfo">
 			<a href="mailto:lauchter.dev@gmail.com">
-				<i class="far fa-envelope fa-3x"></i>
+				<i class="far fa-envelope fa-3x" aria-hidden="true"></i>
 				<span class="sr-only">Email</span>
 			</a>
 			<a target="_blank" href="https://www.linkedin.com/in/laurenauchter">
-				<i class="fab fa-linkedin fa-3x"></i>
+				<i class="fab fa-linkedin fa-3x" aria-hidden="true"></i>
 				<span class="sr-only">LinkedIn</span>
 			</a>
 			<a target="_blank" href="https://twitter.com/LaurenAuchter">
-				<i class="fab fa-twitter fa-3x"></i>
+				<i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
 				<span class="sr-only">Twitter</span>
 			</a>
 			<a target="_blank" href="https://github.com/lsauchter">
-				<i class="fab fa-github fa-3x"></i>
+				<i class="fab fa-github fa-3x" aria-hidden="true"></i>
 				<span class="sr-only">GitHub</span>
 			</a>
 			<a target="_blank" href="https://gitlab.com/lauren.auchter">
-				<i class="fab fa-gitlab fa-3x"></i>
+				<i class="fab fa-gitlab fa-3x" aria-hidden="true"></i>
 				<span class="sr-only">GitLab</span>
 			</a>
 			<div class="arrows">
 				<a href="#intro">
-					<i class="fas fa-chevron-up fa-2x arrow"></i>
+					<i
+						class="fas fa-chevron-up fa-2x arrow"
+						aria-hidden="true"
+					></i>
 					<span class="sr-only">To "Intro"</span>
 				</a>
 			</div>
 			<p class="copyright">
-				<i class="far fa-copyright fa-1x"></i>
+				<i class="far fa-copyright fa-1x" aria-hidden="true"></i>
 				2019 Lauren Auchter
 			</p>
 		</footer>
